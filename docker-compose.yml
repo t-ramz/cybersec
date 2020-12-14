@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  mongo:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./db:/etc/mongo
+  web:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./env:/home/jovyan
+    depends_on:
+      - mongo
+    environment:
+      # environment variable for the database, mostly a note for now
+      - MONGO_URL=mongodb://mongo:27017
