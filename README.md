@@ -1,6 +1,7 @@
 # Python Machine Learning for Cybersecurity
 This is a collection of applications using the Jupyter IDE 
 - From the book [*Hands-On Machine Learning for Cybersecurity*](https://www.packtpub.com/product/hands-on-machine-learning-for-cybersecurity/9781788992282) by Soma Halder, Sinan Ozdemir
+- GitHub repo for code: [https://github.com/PacktPublishing/Hands-on-Machine-Learning-for-Cyber-Security](https://github.com/PacktPublishing/Hands-on-Machine-Learning-for-Cyber-Security)
 ## Liscense
 Each bit of code will likely have its own liscense
 ## Getting started
