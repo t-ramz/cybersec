@@ -39,3 +39,12 @@ for series with recurring properties
 like trends, seasonlity
 ## non-systematic
 harder to model
+# Use cases for time series
+- signal processing - to filter noise
+- stock market - predict based on price history
+- weather forecast - temp, seasonality, predict storms
+- recon detection - early sign of malware is looking for openings
+## cybersecurity
+- account takeover detection - spikes of failed login
+- data exfil - detect packets transported out of network
+- DDoS - detect suspisciously high network traffic vs historic
