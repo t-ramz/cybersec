@@ -48,3 +48,27 @@ harder to model
 - account takeover detection - spikes of failed login
 - data exfil - detect packets transported out of network
 - DDoS - detect suspisciously high network traffic vs historic
+### DDoS
+first cleanse the data and make it human-readable
+for time, we truncate it to more digestable bites (such as n minutes)
+
+**feature computation**
+    we can then accumulate our data that falls within the given range
+        this can, for example, be hits to a network in the time frame
+    this data can be decomposed for manually spotting seasonality
+    we can run autocorrelation
+#### Prediction
+**ARMA**
+    - weak stochastic stationary process
+    - helps forecast future values based on current
+**ARIMA**
+    - generalized ARMA
+    - can be applied to non-stationary sets
+    - p = autoregression lag value
+    - d = difference in order
+    - q = moving average
+**ARFIMA**
+    - generalized ARIMA for non-integer of differencing param
+We can then use the analyzed historical data to predict/forecast a trend
+Anything deviating significantly outside of error is probably cause for concern
+# Ensemble
